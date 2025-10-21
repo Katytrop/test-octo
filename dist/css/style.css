@@ -204,12 +204,21 @@ h6 {
 .btn--blue {
   background-color: #00b6dd;
 }
+.btn--blue:hover {
+  box-shadow: 0 0 5px 3px #00b6dd;
+}
 .btn--dark {
   background-color: #081580;
+}
+.btn--dark:hover {
+  box-shadow: 0 0 5px 3px #081580;
 }
 .btn--black {
   border: 1px solid #00b6dd;
   background-color: #010101;
+}
+.btn--black:hover {
+  box-shadow: 0 0 5px 3px #00b6dd;
 }
 
 .title {
@@ -320,6 +329,7 @@ body {
 }
 .hero__title {
   max-width: 46.875rem;
+  padding-bottom: 1rem;
 }
 @media (max-width: 1199.98px) {
   .hero__title {
@@ -590,13 +600,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    padding: 0 5.375rem;
+    padding: 0 3.875rem;
     gap: 2.5rem;
   }
 }
 @media (max-width: 767.98px) {
   .solutions__body {
-    padding: 0 3.75rem;
+    padding: 0 3.125rem;
   }
 }
 @media (max-width: 575.98px) {

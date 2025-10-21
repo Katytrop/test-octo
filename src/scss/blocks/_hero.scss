@@ -37,6 +37,7 @@
 
     &__title {
         max-width: toRem(750);
+        padding-bottom: toRem(16);
         @media (max-width: $md1+px)  {
             max-width: toRem(617);
         }

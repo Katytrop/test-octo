@@ -20,13 +20,22 @@
     }
     &--blue {
         background-color: $blueColor;
+        &:hover {
+            box-shadow: 0 0 5px 3px $blueColor;
+        }
     }
     &--dark {
         background-color: $darkBlue;
+        &:hover {
+            box-shadow: 0 0 5px 3px $darkBlue;
+        }
     }
     &--black {
         border: 1px solid $blueColor;
         background-color: $mainColorText;
+        &:hover {
+            box-shadow: 0 0 5px 3px $blueColor;
+        }
     }
 }
 

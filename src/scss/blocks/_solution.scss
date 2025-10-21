@@ -26,11 +26,11 @@
             flex-direction: column;
             justify-content: flex-start;
             text-align: center;
-            padding: 0 toRem(86);
+            padding: 0 toRem(62);
             gap: toRem(40);
         }
         @media (max-width: $md3+px)  {
-            padding: 0 toRem(60);
+            padding: 0 toRem(50);
         }
         @media (max-width: $md4+px)  {
             padding: 0;
