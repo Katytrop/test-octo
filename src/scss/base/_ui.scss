@@ -1,0 +1,56 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: toRem(40);
+    width: toRem(160);
+    padding: 0 toRem(15);
+    text-align: center;
+    font-size: toRem(13);
+    line-height: 154%;
+    letter-spacing: 0.06em;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    @media (max-width: $md2+px)  {
+        width: toRem(140);
+        min-height: toRem(36);
+        font-size: toRem(12);
+        line-height: 150%;
+        letter-spacing: 0.07em;
+    }
+    &--blue {
+        background-color: $blueColor;
+    }
+    &--dark {
+        background-color: $darkBlue;
+    }
+    &--black {
+        border: 1px solid $blueColor;
+        background-color: $mainColorText;
+    }
+}
+
+.title {
+    position: relative;
+    font-weight: 700;
+    font-size: toRem(62);
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    z-index: 2; 
+    @media (max-width: $md1+px)  {
+        font-size: toRem(54);
+        line-height: 111%;
+    }
+    @media (max-width: $md2+px)  {
+        font-size: toRem(46);
+        line-height: 104%;
+    }
+    &--center {
+        text-align: center;
+    }
+    &--blue {
+        color: $blueColor;
+    }
+}
+

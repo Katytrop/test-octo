@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "tags": ["Category", "Marketing"],
+        "tagColor": "blue",
+        "title": "Solutions for people like you like people",
+        "author": "Adam Sandler",
+        "authorColor": "blue",
+        "description": "How can we help your technology and services business develop a revenue engine based",
+        "backgroundType": "color",  
+        "backgroundValue": "gray",
+        "buttonText": "Call to action",
+        "buttonColor": "blue"
+    },
+    {
+        "id": "2",
+        "tags": ["Category"],
+        "tagColor": "blue",
+        "title": "Solutions for people like you like people",
+        "author": "Adam Sandler",
+        "authorColor": "blue",
+        "description": "How can we help your technology and services business develop a revenue engine based",
+        "backgroundType": "image",  
+        "backgroundValue": "hero-mainscreen.png",
+        "buttonText": "Call to action",
+        "buttonColor": "blue"
+    },
+    {
+        "id": "3",
+        "tags": ["Category", "Development"],
+        "tagColor": "dark",
+        "title": "Solutions for people like",
+        "author": "Adam Sandler",
+        "authorColor": "dark",
+        "description": "How can we help your technology and services business develop a revenue engine based",
+        "backgroundType": "color",  
+        "backgroundValue": "pink",
+        "buttonText": "Call to action",
+        "buttonColor": "dark"
+    },
+    {
+        "id": "4",
+        "tags": ["Category", "Marketing"],
+        "tagColor": "dark",
+        "title": "Solutions for people like you like people",
+        "author": "Adam Sandler",
+        "authorColor": "dark",
+        "description": "How can we help your technology and services business develop a revenue engine based",
+        "backgroundType": "color",  
+        "backgroundValue": "blue",
+        "buttonText": "Call to action",
+        "buttonColor": "dark"
+    },
+    {
+        "id": "5",
+        "tags": ["Category", "Marketing"],
+        "tagColor": "blue",
+        "title": "Solutions for people like",
+        "author": "Adam Sandler",
+        "authorColor": "blue",
+        "description": "How can we help your technology and services business develop a revenue engine based",
+        "backgroundType": "image",  
+        "backgroundValue": "photoapp.png",
+        "buttonText": "Call to action",
+        "buttonColor": "blue"
+    },
+    {
+        "id": "6",
+        "tags": ["Category"],
+        "tagColor": "dark",
+        "title": "Solutions for people like you like people",
+        "author": "Adam Sandler",
+        "authorColor": "dark",
+        "description": "How can we help your technology and services business develop a revenue engine based",
+        "backgroundType": "color",  
+        "backgroundValue": "gray",
+        "buttonText": "Call to action",
+        "buttonColor": "dark"
+    }
+]

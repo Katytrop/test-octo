@@ -1,0 +1,172 @@
+.cards {
+    padding: toRem(100) 0;
+    @media (max-width: $md1+px)  {
+        padding: toRem(80) 0;
+    }
+    @media (max-width: $md2+px)  {
+        padding: toRem(60) 0;
+    }
+    @media (max-width: $md3+px)  {
+        padding: toRem(50) 0;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: toRem(30);
+        @media (min-width: $md4+px)  {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $md1+px)  {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }  
+}
+
+.item-card {
+    position: relative;
+    min-height: toRem(500);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #d3d8e4;
+    padding: toRem(30);
+    @media (max-width: $md1+px)  {
+        min-height: toRem(470);
+        &:nth-child(2), &:nth-child(5) {
+            display: none;
+        }
+    }
+    @media (max-width: $md2+px)  {
+        min-height: toRem(440);
+        padding: toRem(28);
+    }
+    @media (max-width: $md3+px)  {
+        min-height: toRem(448);
+        padding: toRem(16);
+    }
+    @media (max-width: $md4+px)  {
+        &:nth-child(3), &:nth-child(6) {
+            display: none;
+        }
+    }
+    &__background {
+        width: 100%;
+        height: toRem(170);
+        background-size: cover;
+        background-position: top;
+        margin-bottom: toRem(26);
+        @media (max-width: $md1+px)  {
+            margin-bottom: toRem(20);
+        }
+        @media (max-width: $md2+px)  {
+            height: toRem(150);
+            margin-bottom: toRem(18);
+        }
+        @media (max-width: $md3+px)  {
+            height: toRem(140);
+            margin-bottom: toRem(12);
+        }
+        &--gray { background-color: $grayColor; }
+        &--blue { background-color: $blueColor; }
+        &--pink { background-color: $pinkColor; }
+
+    }
+
+    &__tags {
+        position: absolute;
+        top: toRem(12);
+        left: 0;
+        width: fit-content;
+        height: toRem(36);
+        display: flex;
+        gap: 18px;
+        padding: toRem(6) toRem(15) 0 toRem(15);
+        @media (max-width: $md2+px)  {
+            height: toRem(32);
+            padding: toRem(5) toRem(14) 0 toRem(14);
+        }
+        @media (max-width: $md3+px)  {
+            top: 0;
+            
+        }
+        &--blue { background: #00b6dd; color: #fff; }
+        &--dark { background: #21285a; color: #fff; }
+    }
+
+    &__tag {
+        position: relative;
+        font-size: toRem(13);
+        line-height: 169%;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        @media (max-width: $md2+px)  {
+            font-size: toRem(12);
+            line-height: 167%;
+            letter-spacing: 0.08em;
+        }
+        &:not(:last-child) {
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -9px;
+                width: 1px;
+                height: toRem(18);
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__autor {
+        font-size: toRem(13);
+        line-height: 154%;
+        letter-spacing: 0.06em;
+        @media (max-width: $md1+px)  {
+            margin-bottom: toRem(6);
+        }
+        @media (max-width: $md2+px)  {
+            font-size: toRem(12);
+            line-height: 150%;
+            letter-spacing: 0.07em;
+        }
+        &--blue { color: #00b6dd; }
+        &--dark { color: #21285a; }
+    }
+
+    &__title {
+        font-size: toRem(22);
+        line-height: 136%;
+        letter-spacing: 0.05em;
+        margin-bottom: toRem(16);
+        @media (max-width: $md1+px)  {
+            font-size: toRem(20);
+            line-height: 140%;
+            letter-spacing: 0.06em;
+        }   
+        @media (max-width: $md2+px)  {
+            font-size: toRem(18);
+            line-height: 144%;
+            letter-spacing: 0.06em;
+            margin-bottom: toRem(12);
+        }
+        @media (max-width: $md3+px)  {
+            margin-bottom: toRem(10);
+        }
+    }
+
+    &__descr {
+        line-height: 162%;
+        letter-spacing: 0.05em;
+        @media (max-width: $md2+px)  {
+            font-size: toRem(14);
+            line-height: 157%;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    &__btn {
+        margin-top: auto;
+    }
+}
+

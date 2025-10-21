@@ -1,0 +1,116 @@
+.solutions {
+    background-color: $mainColorText;
+    padding: toRem(100) 0;
+    @media (max-width: $md1+px)  {
+        padding: toRem(80) 0;
+    }
+    @media (max-width: $md2+px)  {
+        padding: toRem(70) 0;
+    }
+    @media (max-width: $md3+px)  {
+        padding: toRem(60) 0;
+    }
+    @media (max-width: $md4+px)  {
+        padding: toRem(50) 0;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: toRem(127);
+        @media (max-width: $md1+px)  {
+            gap: toRem(30);
+        }
+        @media (max-width: $md2+px)  {
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            padding: 0 toRem(86);
+            gap: toRem(40);
+        }
+        @media (max-width: $md3+px)  {
+            padding: 0 toRem(60);
+        }
+        @media (max-width: $md4+px)  {
+            padding: 0;
+            gap: toRem(30);
+        }
+    }
+
+    &__content {
+        flex: 1 1 auto;
+    }
+
+    &__title {
+        margin-bottom: toRem(22);
+        @media (max-width: $md1+px)  {
+            margin-bottom: toRem(20);
+        }
+        @media (max-width: $md2+px)  {
+            text-align: center;
+            margin-bottom: toRem(14);
+        }
+    }
+
+    &__descr {
+        font-size: 22px;
+        line-height: 136%;
+        letter-spacing: 0.05em;
+        color: #fff;
+        margin-bottom: toRem(40);
+        @media (max-width: $md1+px)  {
+            font-size: toRem(20);
+            line-height: 140%;
+            letter-spacing: 0.06em;
+            margin-bottom: toRem(30);
+        }
+        @media (max-width: $md2+px)  {
+            font-size: toRem(18);
+            line-height: 144%;
+            letter-spacing: 0.06em;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        @media (max-width: $md2+px)  {
+            justify-content: center;
+        }
+        @media (max-width: $md4+px)  {
+            flex-direction: column;
+        }
+    }
+
+    &__btn {
+        @media (max-width: $md4+px)  {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        flex: 0 0 toRem(458);
+        height: toRem(380);
+        background-position: top left;
+        background-size: 135%;
+        @media (max-width: $md1+px)  {
+            flex: 0 0 toRem(455);
+            height: toRem(332);
+        }
+        @media (max-width: $md2+px)  {
+            width: 100%;
+            height: toRem(364);
+            flex: 1 1 auto;
+            background-size: cover;
+        }
+        @media (max-width: $md3+px)  {
+            height: toRem(275);
+        }
+        @media (max-width: $md4+px)  {
+            height: toRem(146);
+        }
+    }
+}
+
